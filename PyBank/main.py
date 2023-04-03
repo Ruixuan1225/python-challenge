@@ -16,6 +16,7 @@ greatest_increase = 0
 greatest_decrease_month = 0
 greatest_increase_month = 0
 
+# Using while loop to find all the varianles I need
 while i <= total_months - 1:
     total = budget_data.loc[i,'Profit/Losses'] + total
     changes = budget_data.loc[i,'Profit/Losses'] - previous
