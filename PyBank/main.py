@@ -1,9 +1,12 @@
 import pandas as pd
 
+# Import file
 budget_data = pd.read_csv('./python-challenge/PyBank/Resources/budget_data.csv')
 
+# Fins how many months include in the file
 total_months = len(budget_data)
 
+# define some variables
 i = 0
 total = 0
 total_changes = 0
@@ -26,6 +29,7 @@ while i <= total_months - 1:
         greatest_increase_month = i
     i = i + 1
 
+# calculate average change 
 average_change = round(total_changes/(total_months-1),2)    
 # print(total_months)
 # print(total)
